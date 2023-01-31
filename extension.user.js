@@ -52,8 +52,6 @@ function waitForEl(selector) {
 	// font-family: Netflix Sans,Helvetica Nueue,Helvetica,Arial,sans-serif;
     document.body.prepend(subtitle);
 
-    // TODO: Setup clone element, hide children of <netflix>
-
     const observer = new MutationObserver(mutations => {
         for (let mutation of mutations) {
             // Stop showing the subtitles when we're supposed do
